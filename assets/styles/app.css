@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    background-color: lightgray;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header-logo {
+    width: 60px;
+}
+.header-title {
+    font-size: 2rem;
+}
+.header-nav {
+
+}
