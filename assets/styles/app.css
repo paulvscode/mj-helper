@@ -3,20 +3,119 @@
 body {
     font-family: 'MedievalSharp', cursive;
     background-color: lightgray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+/* header */
 
 .header-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .header-logo {
     width: 60px;
 }
 .header-title {
     font-size: 2rem;
+    margin: 1rem;
 }
 .header-nav {
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
 
+.header-nav:hover {
+    color: #cb773d;
+    transition: .2s ease-in-out;
+}
+
+/* content */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-image: url("https://images.unsplash.com/photo-1440581572325-0bea30075d9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+    background-size: cover;
+}
+
+/* campaigns */
+
+.campaign-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.campaign-list > li {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    background-color: white;
+}
+
+.campaign-list > li:hover {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+/* storyboard */
+
+.storyboard {
+    width: 95%;
+    background-color: aliceblue;
+    height: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.controls {
+    background-color: antiquewhite;
+    margin: .5rem;
+    width: 10%;
+}
+
+.map {
+    background-color: antiquewhite;
+    margin: .5rem auto;
+    width: 90vh;
+}
+
+.map-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.map-container > img {
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+/* footer */
+
+footer {
+    height: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px -1.95px 2.6px;
 }
