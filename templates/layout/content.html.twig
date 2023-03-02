@@ -2,14 +2,10 @@
 
 {% block body %}
     <div class="main">
-        {{ include('layout/content/campaigns.html.twig') }}
-        {#<div class="storyboard">
-            <div class="controls">
-                {{ include('layout/content/controls.html.twig') }}
-            </div>
-            <div class="map">
-                {{ include('layout/content/map.html.twig') }}
-            </div>
-        </div>#}
+        <ul class="campaign-list">
+            {% for campaign in campaigns %}
+                <li><a class="campaign-item" href="{{ path('index_campaign', { 'id': campaign.id}) }}">{{ campaign.name }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
 {% endblock %}

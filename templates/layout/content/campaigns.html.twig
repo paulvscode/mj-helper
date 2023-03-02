@@ -1,9 +1,16 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-        <ul class="campaign-list">
-            <li>Boar of Eleron</li>
-            <li>Star magika</li>
-            <li>Hell Within</li>
-        </ul>
+    {{ include('layout/header.html.twig') }}
+    <div class="storyboard">
+        <div class="controls">
+            {{ include('layout/content/controls.html.twig') }}
+        </div>
+        <div class="display">
+            {{ include('layout/content/display.html.twig') }}
+        </div>
+        <div class="map">
+            {{ include('layout/content/map.html.twig') }}
+        </div>
+    </div>
 {% endblock %}

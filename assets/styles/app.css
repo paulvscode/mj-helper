@@ -55,7 +55,7 @@ body {
     flex-wrap: wrap;
 }
 
-.campaign-list > li {
+.campaign-item {
     padding: 1rem;
     margin: 1rem;
     border: 1px solid black;
@@ -63,9 +63,11 @@ body {
     transition: .2s ease-in-out;
     cursor: pointer;
     background-color: white;
+    text-decoration: none;
+    color: black;
 }
 
-.campaign-list > li:hover {
+.campaign-item:hover {
     padding: 1rem;
     margin: 1rem;
     border: 1px solid white;
@@ -73,6 +75,7 @@ body {
     background-color: black;
     color: white;
     transition: .2s ease-in-out;
+    text-decoration: none
 }
 
 /* storyboard */
@@ -80,22 +83,28 @@ body {
 .storyboard {
     width: 95%;
     background-color: aliceblue;
-    height: 95%;
-    margin: 0 auto;
+    height: 90%;
+    margin: 1rem auto;
     display: flex;
     flex-direction: row;
 }
 
 .controls {
-    background-color: antiquewhite;
     margin: .5rem;
     width: 10%;
+    border: 1px solid black;
+}
+
+.display {
+    margin: .5rem;
+    width: 20%;
+    border: 1px solid black;
 }
 
 .map {
-    background-color: antiquewhite;
-    margin: .5rem auto;
-    width: 90vh;
+    margin: .5rem;
+    flex: 1;
+    border: 1px solid black;
 }
 
 .map-container {
